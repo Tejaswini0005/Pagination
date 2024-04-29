@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .btn{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid rgb(219, 245, 106);
+            background-color: rgba(238, 129, 129, 0.932);
+        }
+        .btn:hover{
+            background-color: rgb(245, 197, 126)
+        }
+        .btn:hover .btn-icon{
+            stroke: rgba(255, 255, 255, 0.034);
+        }
+        .btn-icon{
+            height: 15px;
+            width: 15px;
+            stroke: rgb(243, 241, 242);
+        }
+        .page-link{
+            text-decoration: none;
+            color: rgba(2, 1, 17, 0.89);
+            font-size: 17px;
+            background-color: rgb(236, 181, 181);
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .page-link:hover{
+            background-color: rgb(238, 63, 159);
+
+        }
+        .pagination{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="pagination">
+    <button class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
+    </button>
+    <a href="#" class="page-link">1</a>
+    <a href="#" class="page-link">2</a>
+    <a href="#" class="page-link">3</a>
+    <a href="#" class="page-link">4</a>
+    <a href="#" class="page-link">5</a>
+    <a href="#" class="page-link">6</a>
+    <a href="#" class="page-link">7</a>
+    <a href="#" class="page-link">8</a>
+    <span class="dots">.....</span>
+    <a href="#" class="page-link">24</a>
+    <a href="#" class="page-link">25</a>
+    <button class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+    </button>
+</div>
+</body>
+</html>
